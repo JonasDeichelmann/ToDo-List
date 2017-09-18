@@ -6,5 +6,6 @@ target 'ToDoList' do
   use_frameworks!
 
 pod 'TB', :git => 'https://github.com/JonasDeichelmann/ToolBox.git'
+pod 'RealmSwift'
 
 end

@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		C9ABB3742281CE3F942A5AD7 /* Pods_ToDoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E5BCE17EDBA30F314BF9B7 /* Pods_ToDoList.framework */; };
 		DD279A8E1EBF0D5C00D00542 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD279A8D1EBF0D5C00D00542 /* ChecklistItem.swift */; };
-		DD6B5E3D1F157243008C3DF1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6B5E3B1F157243008C3DF1 /* Realm.framework */; };
-		DD6B5E3E1F157243008C3DF1 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD6B5E3B1F157243008C3DF1 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DD6B5E3F1F157243008C3DF1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6B5E3C1F157243008C3DF1 /* RealmSwift.framework */; };
-		DD6B5E401F157244008C3DF1 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD6B5E3C1F157243008C3DF1 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD72DD801EA49780001D8457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72DD7F1EA49780001D8457 /* AppDelegate.swift */; };
 		DD72DD851EA49780001D8457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD72DD831EA49780001D8457 /* Main.storyboard */; };
 		DD72DD871EA49780001D8457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD72DD861EA49780001D8457 /* Assets.xcassets */; };
@@ -21,28 +17,11 @@
 		DDA29C741EDCD7590057CCD7 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA29C731EDCD7590057CCD7 /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		DD6B5E411F157244008C3DF1 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DD6B5E401F157244008C3DF1 /* RealmSwift.framework in Embed Frameworks */,
-				DD6B5E3E1F157243008C3DF1 /* Realm.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		25E5BCE17EDBA30F314BF9B7 /* Pods_ToDoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		770848348321A6A8B01FC9E8 /* Pods-ToDoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoList/Pods-ToDoList.release.xcconfig"; sourceTree = "<group>"; };
 		83E1374B86228CBA6DF80B52 /* Pods-ToDoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoList/Pods-ToDoList.debug.xcconfig"; sourceTree = "<group>"; };
 		DD279A8D1EBF0D5C00D00542 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
-		DD6B5E3B1F157243008C3DF1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		DD6B5E3C1F157243008C3DF1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		DD72DD7C1EA49780001D8457 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD72DD7F1EA49780001D8457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD72DD841EA49780001D8457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,8 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD6B5E3F1F157243008C3DF1 /* RealmSwift.framework in Frameworks */,
-				DD6B5E3D1F157243008C3DF1 /* Realm.framework in Frameworks */,
 				C9ABB3742281CE3F942A5AD7 /* Pods_ToDoList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,8 +64,6 @@
 		DD72DD731EA49780001D8457 = {
 			isa = PBXGroup;
 			children = (
-				DD6B5E3B1F157243008C3DF1 /* Realm.framework */,
-				DD6B5E3C1F157243008C3DF1 /* RealmSwift.framework */,
 				DD72DD7E1EA49780001D8457 /* ToDoList */,
 				DD72DD7D1EA49780001D8457 /* Products */,
 				A1F1542BB9AFA1814B6B1782 /* Pods */,
@@ -130,7 +105,6 @@
 				DD72DD781EA49780001D8457 /* Sources */,
 				DD72DD791EA49780001D8457 /* Frameworks */,
 				DD72DD7A1EA49780001D8457 /* Resources */,
-				DD6B5E411F157244008C3DF1 /* Embed Frameworks */,
 				0274596973978A8AC239C4E4 /* [CP] Embed Pods Frameworks */,
 				9DEF98ED8B7E529BCDA6761F /* [CP] Copy Pods Resources */,
 			);
@@ -199,10 +173,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ToDoList/Pods-ToDoList-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/TB/TB.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TB.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

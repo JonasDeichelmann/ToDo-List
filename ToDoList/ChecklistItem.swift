@@ -11,7 +11,6 @@ import Realm
 import RealmSwift
 
 final class ChecklistItem: Object {
-//    dynamic var id = 0
     dynamic var text = ""
     dynamic var subText = ""
     dynamic var checked = false

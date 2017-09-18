@@ -10,13 +10,12 @@ import Foundation
 import UIKit
 import RealmSwift
 import Realm
+import TB
 
 protocol AddItemViewControllerDelegate: class {
     func addItemViewControllerDidCancel(_ controller: AddItemViewController)
     func addItemViewController(_ controller: AddItemViewController,didFinishAdding item: ChecklistItem)
 }
-
-
 class AddItemViewController: UITableViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     weak var delegate: AddItemViewControllerDelegate?
     @IBOutlet weak var doneButton: UIBarButtonItem!
