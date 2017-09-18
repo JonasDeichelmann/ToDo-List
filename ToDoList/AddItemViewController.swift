@@ -22,8 +22,7 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate, UIPicke
     @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var textField: UITextField!
     let categories = ["E-Mail","Wohnung", "Hochschule", "Einkaufen", "Auto", "Sonstiges"]
-    var selectedCategorie = ""
-    var items = List<ChecklistItem>()
+    var selectedCategorie = ""	
 
     //MARK: - PickerView -
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int)-> String?{
