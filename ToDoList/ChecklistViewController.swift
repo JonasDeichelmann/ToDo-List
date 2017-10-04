@@ -54,6 +54,8 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
         items = realm.objects(ChecklistItem.self)
         tableView.reloadData()
     }
+
+    // - MARK: TableView Functions
     
     override func tableView(_ tableView: UITableView,
                             numberOfRowsInSection section: Int) -> Int {
@@ -85,6 +87,8 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
+
+    // - MARK: configure Functions
     func configureCheckmark(for cell: UITableViewCell,at item: ChecklistItem) {
         let realm = try! Realm()
         try! realm.write {
@@ -105,7 +109,6 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
         let label = cell.viewWithTag(1000) as! UILabel
         label.text = item.text
     }
-    
     func configureSubText(for cell: UITableViewCell,
                           with item: ChecklistItem) {
         let label = cell.viewWithTag(1001) as! UILabel
