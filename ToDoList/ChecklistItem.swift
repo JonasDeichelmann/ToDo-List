@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Realm
 import RealmSwift
 
 final class ChecklistItem: Object {
@@ -21,5 +20,4 @@ final class ChecklistItem: Object {
     func toggleChecked() {
         checked = !checked
     }
-
 }

@@ -42,6 +42,7 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
             TB.warn("Unknown Segue")
         }
     }
+    // - MARK: Delegate
     func addItemViewControllerDidCancel(_ controller: AddItemViewController) {
         dismiss(animated: true, completion: nil)
     }
@@ -115,8 +116,3 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
         label.text = item.subText
     }
 }
-
-
-
-
-

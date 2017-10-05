@@ -12,16 +12,13 @@ import RealmSwift
 import Realm
 import TB
 
-protocol AddItemViewControllerDelegate: class {
-    func addItemViewControllerDidCancel(_ controller: AddItemViewController)
-    func addItemViewController(_ controller: AddItemViewController,didFinishAdding item: ChecklistItem)
-}
+
 class AddItemViewController: UITableViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     weak var delegate: AddItemViewControllerDelegate?
     @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var textField: UITextField!
     let categories = ["E-Mail","Wohnung", "Hochschule", "Einkaufen", "Auto", "Sonstiges"]
-    var selectedCategorie = ""	
+    var selectedCategorie = ""
 
     //MARK: - PickerView -
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int)-> String?{
@@ -86,3 +83,7 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate, UIPicke
         return nil
     }
 }
+
+
+
+
